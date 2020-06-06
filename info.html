@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>St. Thomas Indian Orthodox Church Baltimore</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="icon" href="./media/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="bannerImg">
+			<a href="index.html">
+				<img style="max-width:100%;height:auto;padding: 5px" srcset="./media/churchLogoMobile.png">
+			</a>
+
+			
+		</div>
+		
+		<div id="navbarWrapper">
+			<div id="navbar" class="topnav">
+				<a href="index.html">Home</a>
+				<a href="vicars-message.html">Vicar's Message</a>
+				<a href="info.html">Church Info</a>
+				<a href="organizations.html">Spiritual Organizations</a>
+				<a href="resources.html">Resources</a>
+				<a href="about-us.html">About Us</a>
+				<a href="javascript:void(0);" class="icon" onclick="showHiddenLinks()">&#9776;</a>
+
+			</div>
+		</div>
+		<script>
+			function showHiddenLinks() {
+			  var x = document.getElementById("navbar");
+			  if (x.className === "topnav") {
+			    x.className = "responsive";
+			  } else {
+			    x.className = "topnav";
+			  }
+			}
+		</script>
+		<div class="content">
+			<div id="schedule">
+				<h3>Schedule</h3>
+				<p>The Church's Service, Prayer, and Sunday School timings are listed below.</p>
+				<ul>
+					<li>Evening Prayer - Every Saturday 7:00pm - 8:30pm</li>
+					<li>Morning Prayer - Every Sunday 8:30am - 9:30am</li>
+					<li>Holy Qurbana - Every Sunday directly following Morning Prayer from 9:30am to 11:30am</li>
+					<li>Sunday School - Every Sunday 12:00pm - 1:15pm</li>
+				</ul>
+				<p id="ourChurchLink"> The service is conducted in Malayalam except for the fourth Sunday of every month where the service is conducted in English.</p>
+			</div>
+		</div>
+		</br></br></br></br></br></br></br></br></br></br>
+		<p></p>
+	</body>
+	
+</html>
