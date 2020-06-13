@@ -51,5 +51,32 @@ function branch(len, rep) {
 }
 
 function download() {
-	saveCanvas(c, 'My Fractal', 'png');
+	// x = saveCanvas(c, 'My Fractal', 'png');
+	canvas = document.getElementById('defaultCanvas0');
+	console.log(canvas);
+	x = canvas.toDataURL('image/png');
+	console.log(x)
+	if (navigator.share) {
+	    navigator.share({
+	      title: 'WebShare API Demo',
+	      url: x,
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+    .catch(console.error);
+  } else {
+    saveCanvas(c, 'My Fractal', 'png');
+  }
+}
+
+function randomRange(min, max) {
+	return Math.round(Math.random() * (max - min) + min);
+}
+function randomFractal() {
+	document.getElementById('angleSlider').value = randomRange(1, 180);
+	document.getElementById('reductionSlider').value = randomRange(1, 100);
+	document.getElementById('amtSlider').value = randomRange(1, 8);
+	document.getElementById('angle').textContent = document.getElementById('angleSlider').value;
+	document.getElementById('reduction').textContent = document.getElementById('reductionSlider').value;
+	document.getElementById('amt').textContent = document.getElementById('amtSlider').value;
 }
