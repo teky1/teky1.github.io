@@ -32,7 +32,7 @@
     	background-color: grey;
   </style>
   <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="fractal_icon.ico">
 </head>
@@ -54,7 +54,7 @@
 		</div>
 		<div style="display:inline-block">
 			<button type="button" onclick="randomFractal()"><b>Random</b></button>
-			<button type="button" onclick="download()"><b>Download</b></button>
+			<button type="button" id="downloadBtn" onclick="download()"><b>Download</b></button>
 		</div>
 	</div>
 	<script type="text/javascript">
@@ -75,6 +75,26 @@
 		amtSlider.oninput = function(){
 			amtDisplay.textContent = this.value;
 		}
+
+		var downloadButton = document.getElementById('downloadBtn');
+		downloadButton.addEventListener('click', event => {
+			canvas = document.getElementById('defaultCanvas0');
+				console.log(canvas);
+				x = canvas.toDataURL('image/png');
+				console.log(x)
+				if (navigator.share) {
+				    navigator.share({
+				      title: 'WebShare API Demo',
+				      url: x,
+			    }).then(() => {
+			      console.log('Thanks for sharing!');
+			    })
+			    .catch(console.error);
+			  } else {
+			    saveCanvas(c, 'My Fractal', 'png');
+			  }
+		});
+
 	</script>
 	<script src="sketch.js"></script>
 </body>

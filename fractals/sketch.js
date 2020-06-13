@@ -52,7 +52,7 @@ function branch(len, rep) {
 
 function download() {
 	// x = saveCanvas(c, 'My Fractal', 'png');
-	canvas = document.getElementById('defaultCanvas0');
+	/*canvas = document.getElementById('defaultCanvas0');
 	console.log(canvas);
 	x = canvas.toDataURL('image/png');
 	console.log(x)
@@ -66,7 +66,7 @@ function download() {
     .catch(console.error);
   } else {
     saveCanvas(c, 'My Fractal', 'png');
-  }
+  }*/
 }
 
 function randomRange(min, max) {
