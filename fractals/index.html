@@ -54,7 +54,7 @@
 		</div>
 		<div style="display:inline-block">
 			<button type="button" onclick="randomFractal()"><b>Random</b></button>
-			<button type="button" id="downloadBtn"><b>DOwnload</b></button>
+			<button type="button" id="downloadBtn"><b>Download</b></button>
 		</div>
 	</div>
 	<script type="text/javascript">
@@ -77,32 +77,10 @@
 		}
 
 		var downloadButton = document.getElementById('downloadBtn');
-		var x;
 		downloadButton.addEventListener('click', event => {
-				canvas = document.getElementById('defaultCanvas0');
-				img = document.getElementById('theImage')
-
-				// x = canvas.toDataURL('image/png');
-				canvas.toBlob(blob => {
-					console.log(blob);
-					x = URL.createObjectURL(blob);
-				})
-
-				console.log(x);
-				// img.src = x;*/
-
-				if (navigator.share) {
-				    navigator.share({
-				      title: 'My Fractal',
-				      url: FileReader.readAsDataURL(x),
-			    }).then(() => {
-			      console.log('Thanks for sharing!');
-			    })
-			    .catch(console.error);
-			  } else {
-			    saveCanvas(c, 'My Fractal', 'png');
-			  }
-		});
+				saveCanvas(c, 'My Fractal', 'png');
+			  });
+		
 
 	</script>
 	<script src="sketch.js"></script>
