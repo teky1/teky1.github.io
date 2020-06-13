@@ -50,24 +50,6 @@ function branch(len, rep) {
 	}
 }
 
-function download() {
-	// x = saveCanvas(c, 'My Fractal', 'png');
-	/*canvas = document.getElementById('defaultCanvas0');
-	console.log(canvas);
-	x = canvas.toDataURL('image/png');
-	console.log(x)
-	if (navigator.share) {
-	    navigator.share({
-	      title: 'WebShare API Demo',
-	      url: x,
-    }).then(() => {
-      console.log('Thanks for sharing!');
-    })
-    .catch(console.error);
-  } else {
-    saveCanvas(c, 'My Fractal', 'png');
-  }*/
-}
 
 function randomRange(min, max) {
 	return Math.round(Math.random() * (max - min) + min);
