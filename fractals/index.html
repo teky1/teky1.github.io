@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fractal Tree Generator</title>
+  <style>
+    body {
+      padding: 5px;
+      margin: 0;
+    }
+    canvas {
+    	border: solid 1px black;
+    }
+    button {
+    	color: white;
+    	font-size: 16px;
+    	padding: 10px;
+    	background-color: rgb(0, 128, 255);
+    	border: solid 1px rgb(0, 128, 255);
+    	border-radius: 5px;
+    	margin: 10px
+    }
+    button:hover {
+    	color: rgb(0, 128, 255);
+    	background-color: white;
+    	-webkit-transition-duration: .3s; /* Safari */
+  		transition-duration: .3s;
+    }
+    button:active {
+    	background-color: grey;
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div>
+		<div style='display:inline-block;'>
+			<input id="angleSlider" type="range" min="0" max="180" value="45">
+			<p>Angle: <span id="angle">45</span>°</p>
+		</div>
+		<div style='display:inline-block;'>
+			<input id="reductionSlider" type="range" min="0" max="100" value="70">
+			<p>Reduction: <span id="reduction">70</span>%</p>
+		</div>
+		<div style='display:inline-block;'>
+			<input id="amtSlider" type="range" min="1" max="8" value="4">
+			<p>Tree Amount: <span id="amt">4</span></p>
+		</div>
+		<div style="display:inline-block">
+			<button type="button" onclick="download()"><b>Download Fractal</b></button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var angleSlider = document.getElementById('angleSlider');
+		var angleDisplay = document.getElementById('angle');
+		angleSlider.oninput = function(){
+			angleDisplay.textContent = this.value;
+		}
+
+		var reductionSlider = document.getElementById('reductionSlider');
+		var reductionDisplay = document.getElementById('reduction');
+		reductionSlider.oninput = function(){
+			reductionDisplay.textContent = this.value;
+		}
+
+		var amtSlider = document.getElementById('amtSlider');
+		var amtDisplay = document.getElementById('amt');
+		amtSlider.oninput = function(){
+			amtDisplay.textContent = this.value;
+		}
+	</script>
+	<script src="sketch.js"></script>
+</body>
+
+</html>
