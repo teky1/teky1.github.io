@@ -94,7 +94,7 @@
 				if (navigator.share) {
 				    navigator.share({
 				      title: 'My Fractal',
-				      url: x,
+				      url: FileReader.readAsDataURL(x),
 			    }).then(() => {
 			      console.log('Thanks for sharing!');
 			    })
