@@ -4,7 +4,7 @@ var angle;
 var reduction;
 var amt;
 var w = window.innerWidth - 10;
-var h = window.innerHeight - 10;
+var h = window.innerHeight - 100;
 
 function setup() {
 	if(w > h){
@@ -14,6 +14,7 @@ function setup() {
 	} else {
 		c = createCanvas(w, h);
 	}
+	c.parent('canvasDiv')
 }
 
 function draw() {
