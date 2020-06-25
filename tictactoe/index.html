@@ -389,7 +389,7 @@
 
 
             if(board[row-1][column-1] == 0 && yourTurn == true && gameOver == false && user == true) {
-                $('#row'+row+' .col'+column+' img').attr('src', "o.png");
+                $('#row'+row+' .col'+column+' img').attr('src', "/tictactoe/o.png");
                 board[row-1][column-1] = 2;
                 yourTurn = false;
                 $('#whosTurn').html('<span style="color:red;">Red is playing...</span>')
@@ -402,7 +402,7 @@
                 }
             }
             else if(board[row-1][column-1] == 0 && yourTurn == false && gameOver == false && user == false) {
-                $('#row'+row+' .col'+column+' img').attr('src', "x.png");
+                $('#row'+row+' .col'+column+' img').attr('src', "/tictactoe/x.png");
                 board[row-1][column-1] = 1;
                 yourTurn = true;
                 $('#whosTurn').html('<span style="color:blue;">Blue\'s Turn</span>')
