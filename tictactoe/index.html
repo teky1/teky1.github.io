@@ -51,7 +51,7 @@
 </head>
 <body>
 	<div style="">
-		<h1>Tic Tac Toe</h1>
+		<h1>Unbeatable Tic Tac Toe AI</h1>
 		<a href="/tictactoe" style="display: none;">Reset Board</a>
 	</div>
     <table>
@@ -71,7 +71,7 @@
             <td class="col3" onclick="boxClicked(3, 3, true);"><img src="" style="width:95%;"></td>
         </tr>
     </table>
-    <p id="whosTurn"><span style="color:blue;">Blue's Turn</span></p>
+    <p id="whosTurn"><span style="color:blue;">Blue's Turn (Click on a square)</span></p>
     <script type="text/javascript">
         var w = window.innerWidth - 30;
         var h = window.innerHeight - (window.innerHeight/5);
@@ -389,7 +389,7 @@
 
 
             if(board[row-1][column-1] == 0 && yourTurn == true && gameOver == false && user == true) {
-                $('#row'+row+' .col'+column+' img').attr('src', "{% static 'media/o.png' %}");
+                $('#row'+row+' .col'+column+' img').attr('src', "o.png");
                 board[row-1][column-1] = 2;
                 yourTurn = false;
                 $('#whosTurn').html('<span style="color:red;">Red is playing...</span>')
@@ -402,7 +402,7 @@
                 }
             }
             else if(board[row-1][column-1] == 0 && yourTurn == false && gameOver == false && user == false) {
-                $('#row'+row+' .col'+column+' img').attr('src', "{% static 'media/x.png' %}");
+                $('#row'+row+' .col'+column+' img').attr('src', "x.png");
                 board[row-1][column-1] = 1;
                 yourTurn = true;
                 $('#whosTurn').html('<span style="color:blue;">Blue\'s Turn</span>')
