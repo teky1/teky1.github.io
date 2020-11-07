@@ -17,8 +17,110 @@
 		<div id="main">
 			<h1>Affine Cipher Practice</h1>
 			<p>Encode/Decode this text using the Affine Cipher. Make sure you include all punctuation before submitting.</p>
+
+			<button id="showResources" onclick="showResources()">Show Resources</button>
+			<div id="resources">
+				<button onclick="hideResources()">Hide Resources</button>
+				<h4>Alphabet</h4>
+				<table id="alphabetTable">
+					<tr>
+						<th>A</th>
+						<th>B</th>
+						<th>C</th>
+						<th>D</th>
+						<th>E</th>
+						<th>F</th>
+						<th>G</th>
+						<th>H</th>
+						<th>I</th>
+						<th>J</th>
+						<th>K</th>
+						<th>L</th>
+						<th>M</th>
+						<th>N</th>
+						<th>O</th>
+						<th>P</th>
+						<th>Q</th>
+						<th>R</th>
+						<th>S</th>
+						<th>T</th>
+						<th>U</th>
+						<th>V</th>
+						<th>W</th>
+						<th>X</th>
+						<th>Y</th>
+						<th>Z</th>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+					</tr>
+				</table>
+
+				<h4>Inverse Table</h4>
+				<table>
+					<tr>
+						<td>1</td>
+						<td>3</td>
+						<td>5</td>
+						<td>7</td>
+						<td>9</td>
+						<td>11</td>
+						<td>15</td>
+						<td>17</td>
+						<td>19</td>
+						<td>21</td>
+						<td>23</td>
+						<td>25</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>9</td>
+						<td>21</td>
+						<td>15</td>
+						<td>3</td>
+						<td>19</td>
+						<td>7</td>
+						<td>23</td>
+						<td>11</td>
+						<td>5</td>
+						<td>17</td>
+						<td>25</td>
+					</tr>
+				</table><br><br>
+				<button onclick="hideResources()">Hide Resources</button>
+			</div>
+
 			<hr>
+			<br>
+			<button id="startButton" onclick="beginProblem()">Begin Problem</button>
 			<div id="problem">
+				<span id="timer">Timer: <span id="timerNum">0</span>s</span><br><br>
+				<script src="timer.js"></script>
 				<p>Any extra information about the problem like keys and stuff goes here</p>
 
 				<p class='problemText'>This is sample text that will later be replaced with cipher text that is to be decoded or plaintext that is to be encoded</p>

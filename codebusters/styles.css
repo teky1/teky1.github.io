@@ -42,7 +42,12 @@
 	font-size: 20px;
 }
 #problem {
-	display: inline-block;
+	display: none;
+}
+#timer {
+	border: 1px black solid;
+	padding: 5px;
+	margin: 10px 0px;
 }
 button {
 	color: white;
@@ -69,4 +74,14 @@ button:active{
 }
 body {
 	font-family: "Courier New", Courier, monospace;
+}
+#resources {
+	display:  none;
+}
+table, th, td {
+	border: 1px solid black;
+	padding:  5px;
+}
+table {
+	border-collapse: collapse;
 }
