@@ -6,7 +6,7 @@
 	top: 0;
 	left: 0;
 	overflow-x: hidden;
-	background-color: #000033;
+	background-color: #0a0573;
 	padding-top: 10px;
 }
 #sidebar a {
@@ -53,21 +53,21 @@ button {
 	color: white;
 	font-size: 17px;
 	padding: 10px;
-	background-color: #000033;
-	border: solid 1px #000033;
+	background-color: #0a0573;
+	border: solid 1px #0a0573;
 	border-radius: 3px;
 	margin: 10px 0px;
 }
 
 button:hover{
-	color: #000033;
+	color: #0a0573;
 	background-color: white;
 	-webkit-transition-duration: .2s;
 	transition-duration .2s;
 }
 
 button:active{
-	color: #000033;
+	color: #0a0573;
 	background-color: grey;
 	-webkit-transition-duration: .2s;
 	transition-duration .2s;
