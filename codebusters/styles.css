@@ -1,0 +1,72 @@
+#sidebar {
+	height:100%;
+	width: 180px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	background-color: #000033;
+	padding-top: 10px;
+}
+#sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 21px;
+  color: #818181;
+  display: block;
+}
+#sidebar h1 {
+	padding: 6px 8px 6px 16px;
+	font-size: 21px;
+	color: #F0F0F0;
+	display: block;
+}
+#sidebar a:hover {
+  color: #f1f1f1;
+}
+#main {
+	margin-left: 180px;
+	padding: 20px 30px;
+}
+#main h1{
+	font-size: 30px;
+}
+#inputBox {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 15px;
+	width: 100%;
+	resize: none;
+}
+.problemText {
+	font-size: 20px;
+}
+#problem {
+	display: inline-block;
+}
+button {
+	color: white;
+	font-size: 17px;
+	padding: 10px;
+	background-color: #000033;
+	border: solid 1px #000033;
+	border-radius: 3px;
+	margin: 10px 0px;
+}
+
+button:hover{
+	color: #000033;
+	background-color: white;
+	-webkit-transition-duration: .2s;
+	transition-duration .2s;
+}
+
+button:active{
+	color: #000033;
+	background-color: grey;
+	-webkit-transition-duration: .2s;
+	transition-duration .2s;
+}
+body {
+	font-family: "Courier New", Courier, monospace;
+}
