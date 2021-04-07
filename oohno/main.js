@@ -9,7 +9,7 @@ type_input.addEventListener("input", render);
 
 
 function render(){
-  ctx.fillStyle = 'black';
+  ctx.fillStyle = '#2C2F33';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   color_layer = document.getElementById(colors_input.value);
   ctx.drawImage(color_layer, 0, 0, canvas.width, canvas.height);
@@ -17,4 +17,4 @@ function render(){
   ctx.drawImage(type_layer, 0, 0, canvas.width, canvas.height);
 }
 
-render();
+setTimeout(render, 200);
