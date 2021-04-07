@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html style="padding:0;margin:0;">
+  <head>
+	   <title>Ooh No!</title>
+	    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel='icon' href='assets/back.png'/>
+	</head>
+	<body style='padding:5px;margin:0;'>
+		<canvas id="screen" style="border:solid 1px black;" width="500" height="700"></canvas>
+		<div id='chessPieceImages' style="display:none;">
+			<img id='card_back' src='assets/back.png'/>
+			<img id='blue' src='assets/blue.png'/>
+			<img id='green' src='assets/green.png'/>
+			<img id='yellow' src='assets/yellow.png'/>
+			<img id='red' src='assets/red.png'/>
+
+      <img id='zero' src='assets/0.png'/>
+			<img id='one' src='assets/1.png'/>
+			<img id='two' src='assets/2.png'/>
+			<img id='three' src='assets/3.png'/>
+			<img id='four' src='assets/4.png'/>
+			<img id='five' src='assets/5.png'/>
+			<img id='six' src='assets/6.png'/>
+      <img id='seven' src='assets/7.png'/>
+			<img id='eight' src='assets/8.png'/>
+      <img id='nine' src='assets/9.png'/>
+
+      <img id='skip' src='assets/skip.png'/>
+      <img id='reverse' src='assets/reverse.png'/>
+      <img id='plus_two' src='assets/plus_two.png'/>
+      <img id='plus_four' src='assets/plus_four.png'/>
+      <img id='wild' src='assets/wild.png'/>
+		</div>
+    <br>
+    <select id="colors_input" name="color">
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="yellow">Yellow</option>
+      <option value="red">Red</option>
+    </select>
+    <select id="type_input" name="type">
+      <option value="zero">0</option>
+      <option value="one">1</option>
+      <option value="two">2</option>
+      <option value="three">3</option>
+      <option value="four">4</option>
+      <option value="five">5</option>
+      <option value="six">6</option>
+      <option value="seven">7</option>
+      <option value="eight">8</option>
+      <option value="nine">9</option>
+      <option value="skip">skip</option>
+      <option value="reverse">reverse</option>
+      <option value="plus_two">+2</option>
+      <option value="plus_four">+4</option>
+      <option value="wild">wild</option>
+    </select>
+
+    <!-- <img src='assets/back.png' width="500" height="700"/> -->
+
+		<script src="main.js"></script>
+   	</body>
