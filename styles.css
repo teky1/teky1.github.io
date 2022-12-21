@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+/* <-+-> General <-+->*/
+
+body {
+    background-color: rgb(40,40,40);
+    /* background-image: url("assets/robot_dark.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; */
+    
+}
+
+/* <-+-> Hero <-+->*/
+
+.hero {
+    background-image: url("assets/robot_dark.png");
+    height: 100vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.hero h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 3rem;
+}
+#heroRegister {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: 'Source Code Pro', monospace;
+    padding: .5em 1em;
+}
+
+/* <-+-> Navbar <-+->*/
+
+#mainLogo {
+    height: 3rem;
+    margin: .5em;
+}
+.navbar {
+    background-color: rgb(40,40,40);
+    transition: .35s;
+}
+.navbarTransparent {
+    background-color: transparent;
+}
+.navbarTransparent .nav-link {
+    color: rgb(200, 200, 200);
+}
+.navbarTransparent .nav-link:hover {
+    color: rgb(128, 128, 128);
+}
+
+.navbar-brand {
+    margin-right: 2rem;
+}
+.nav-item {
+    padding-right: 2em;
+    text-align: center;
+}
+.nav-link {
+    font-size: 1.4rem;
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(150, 150, 150);
+}
+.navbar-toggler, .navbar-toggler-icon {
+    color: rgb(150, 150, 150);
+}
+.nav-link:hover, .nav-link:active{
+    color: white;
+}
+
+.registerBtn, .navbarTransparent .registerBtn {
+    background-color: rgb(200, 0, 0);
+    border: 2px solid rgb(200, 0, 0);
+    border-radius: .5em;
+    color: white;
+
+}
+.registerBtn:hover, .navbarTransparent .registerBtn:hover {
+    color: rgb(230, 230, 230);
+    background-color: rgb(150, 0, 0);
+}
+
+/* <-+-> Section General <-+->*/
+
+.section {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    padding: 3rem 1rem;
+    scroll-margin-top: 5rem;
+}
+.sectionTitle {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.sectionContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* <-+-> About <-+->*/
+
+#about {
+    background-color: rgb(65,65,65);
+}
+#about p {
+    font-size: 1.3rem;
+    color: rgb(220, 220, 220);
+    width: fit-content;
+    text-align: left;
+    text-indent: 4rem;
+}
+
+/* <-+-> Schedule <-+->*/
+
+#schedule {
+    background-color: rgb(55, 55, 55);
+}
+#schedule h2 {
+    margin-bottom: 7rem;
+    color: rgb(220, 220, 220);
+}
+
+/* <-+-> FAQ <-+->*/
+
+#faq {
+    background-color: rgb(50, 50, 50);
+}
+.faqQuestion {
+    text-align: left;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.question {
+    font-weight: bold;
+    /* text-decoration: underline; */
+    font-size: 1.6rem;
+    color: rgb(220, 220, 220);
+}
+.answer {
+    margin-top: 1rem;
+    display: block;
+    color: rgb(200, 200, 200);                                                                                       
+}
+
+/* <-+-> Team <-+->*/
+#team {
+    background-color: rgb(45, 45, 45);
+}
+#team p {
+    font-size: 1.3rem;
+    color: rgb(220, 220, 220);
+    width: fit-content;
+    text-align: left;
+    text-indent: 4rem;
+}
+
+
